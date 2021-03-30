@@ -1,0 +1,10 @@
+html    {
+        background-color:hsl(30, 100%, 95%);
+        font-family: Arial, Helvetica, sans-serif;
+        }
+      
+.header {
+        background-color: hsl(30, 100%, 15%);
+        color: hsl(30, 100%, 90%);
+        padding: 0px 8px;
+        }
