@@ -1,0 +1,97 @@
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #E5E5E5;
+}
+
+.header {
+    padding: 8rem 10rem 0 10rem;
+}
+
+.header-title {
+    font: normal 700 3.5rem/4rem Tahoma;
+}
+
+.header-description {
+    font: normal 400 1.5rem/2rem Tahoma;
+}
+.navigation {
+    display: flex;   
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10rem;
+    margin: 1rem 0;
+}
+.nav-bar {
+    height: 0.25rem;
+    flex: 1;
+    background-color: #D8D8EB;
+}
+.nav-pos {
+    background-color: #1C4088;
+    width: 5rem;
+    height: 100%;
+}
+.arrow-prev,
+.arrow-next {
+    display: flex;
+    background-color: #1C4088;
+    color:white;
+    border-radius: 1rem;
+    width: 4rem;
+    height: 4rem;
+    align-items: center;
+    justify-content: center;
+    font: normal 400 2rem/2rem Tahoma;
+    margin: 0 0 0 2rem;
+}
+.disable {
+    background-color: #D8D8EB;
+}
+.gallery-viewport {
+    overflow: hidden;
+    padding: 1rem 0;
+}
+.houses {
+    display: flex;
+    margin-left: 10rem;
+}
+.house {
+    width: 22rem;
+    height: 26rem;
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 0.25rem;
+    box-shadow: 0px 2px 8px rgba(28, 64, 136, 0.1), 0px 4px 20px rgba(28, 64, 136, 0.1);
+}
+.house-picture {
+    width: 22rem;
+    height: 16rem;
+    border-radius: 0.25rem 0.25rem 0 0;
+}
+.house-detail {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.house-title {
+    flex: 1;
+    font: normal 700 1.3rem/1.6rem Tahoma;
+}
+.house-price {
+    font: normal 700 1rem/1.5rem Tahoma;
+    color: #1C4088;
+    margin-bottom: 0.25rem;
+}
+.house-location {
+    font: normal 400 1rem/1.5rem Tahoma;
+}
+.footer {
+    height: 8rem;
+}

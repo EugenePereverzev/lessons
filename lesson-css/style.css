@@ -1,0 +1,52 @@
+html {
+        font-family: Arial, Helvetica, sans-serif;
+}
+
+.welcome {
+        border: 1px solid blue;
+        font: bold 1.5rem/2 Arial;
+}
+.table {
+        display: flex;
+        flex-direction: column;
+}
+.header, .row {
+       display: flex;
+       justify-content: flex-start;
+}
+
+.number, .date, .status {
+        border: 1px solid skyblue;
+}
+.number {
+        flex: 1;
+}
+.date {
+        flex: 2;
+}
+.status {
+        flex: 5;
+}
+
+.number:not(.header div) {
+        text-align: right;
+}
+.date:not(.header div) {
+        text-align: center;
+}
+.status:not(.header div) {
+        text-align: left;
+}
+
+.header {
+        font: bold 1.25rem/1.5 Arial;
+        background-color: navy;
+        color: white;
+}
+.header div {
+        text-align: center;
+}
+.row {
+        font: normal 1.25rem/1.5 Arial;
+        color: navy;
+}
