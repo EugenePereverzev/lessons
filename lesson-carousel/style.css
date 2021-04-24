@@ -1,13 +1,19 @@
+:root {
+    --side-padd: 10rem;
+    --top-padd: 8rem;
+}
+
 html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
     background-color: #E5E5E5;
+    margin: 0;
 }
 
 .header {
-    padding: 8rem 10rem 0 10rem;
+    padding: var(--top-padd) var(--side-padd) 0 var(--side-padd);
 }
 
 .header-title {
@@ -21,18 +27,21 @@ body {
     display: flex;   
     justify-content: space-between;
     align-items: center;
-    padding: 0 10rem;
+    padding: 0 var(--side-padd);
     margin: 1rem 0;
 }
 .nav-bar {
     height: 0.25rem;
     flex: 1;
     background-color: #D8D8EB;
+    position: relative;
 }
 .nav-pos {
     background-color: #1C4088;
     width: 5rem;
-    height: 100%;
+    top: 0;
+    bottom: 0;
+    position: absolute;
 }
 .arrow-prev,
 .arrow-next {
@@ -46,8 +55,9 @@ body {
     justify-content: center;
     font: normal 400 2rem/2rem Tahoma;
     margin: 0 0 0 2rem;
+    cursor: pointer;
 }
-.disable {
+.disabled {
     background-color: #D8D8EB;
 }
 .gallery-viewport {
@@ -56,7 +66,7 @@ body {
 }
 .houses {
     display: flex;
-    margin-left: 10rem;
+    margin-left: var(--side-padd);
 }
 .house {
     width: 22rem;
@@ -93,5 +103,12 @@ body {
     font: normal 400 1rem/1.5rem Tahoma;
 }
 .footer {
-    height: 8rem;
+    height: var(--top-padd);
+}
+
+@media screen and (max-width: 50rem) {
+    :root {
+        --side-padd: 5rem;
+        --top-padd: 4rem;  
+    }
 }
